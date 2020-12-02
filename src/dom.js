@@ -9,26 +9,20 @@ const letter = document.getElementById('let');
 const btn = document.getElementById('btn');
 
 const toggle = () => {
-  let value = parseInt(tempDom.textContent);
-  if(checkbox.checked) {
-    btn.className = "toggleWrapper";
-    letter.textContent = "°F";
-    value = (value * 9)/5 + 32;
+  let value = parseInt(tempDom.textContent, 10);
+  if (checkbox.checked) {
+    btn.className = 'toggleWrapper';
+    letter.textContent = '°F';
+    value = (value * 9) / 5 + 32;
     tempDom.textContent = `${Math.round(value)}°F`;
-   } else {
-    btn.className = "toggleWrapper-done"
-    letter.textContent = "°C"
-    value = ((value - 32) * 5)/9;
+  } else {
+    btn.className = 'toggleWrapper-done';
+    letter.textContent = '°C';
+    value = ((value - 32) * 5) / 9;
     tempDom.textContent = `${Math.round(value)}°C`;
-   }
-}
-
-const switchTemp = () => {
-  let value = document.getElementById('temp').value;
-  if(checkbox.checked) {
-    let value = document.getElementById('temp').value;
-    console.log(value);
   }
-}
+};
 
-export { cityDom, tempDom, infoDom, submit, flag, background, checkbox, letter, btn, toggle }
+export {
+  cityDom, tempDom, infoDom, submit, flag, background, checkbox, letter, btn, toggle,
+};

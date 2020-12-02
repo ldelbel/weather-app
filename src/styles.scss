@@ -32,7 +32,7 @@ main {
   top: 0;
   width: 70%;
   height: 100vh;
-  background-image: url('./images/clear.jpg');
+  background-image: url('./images/standard.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   transition: background 0.5s;
@@ -43,6 +43,7 @@ main {
     @extend .back-img;
 
     background-image: url('./images/clear.jpg');
+    background-position: bottom;
   }
 
   &-rain {
@@ -93,16 +94,16 @@ form {
   }
 }
 
-.submit { 
-	padding: 1px 9px 5px 9px;
-	color: #FFF;
-	margin: 0 auto;
-	background: #0da5d4;
-	font-size: 25px;
-	text-align: center;
-	font-style: normal;
-	border: 1px solid #1674a0;
-	border-width: 1px 1px 3px;
+.submit {
+  padding: 1px 9px 5px 9px;
+  color: #fff;
+  margin: 0 auto;
+  background: #0da5d4;
+  font-size: 25px;
+  text-align: center;
+  font-style: normal;
+  border: 1px solid #1674a0;
+  border-width: 1px 1px 3px;
   cursor: pointer;
   border-top-right-radius: 0.3em;
   border-bottom-right-radius: 0.3em;
@@ -125,7 +126,7 @@ form {
 }
 
 .temp {
-  color:white;
+  color: white;
   font-size: 6em;
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
@@ -170,20 +171,21 @@ h2 {
 }
 
 .fade-in {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 0.8s;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.8s;
 }
 
 @keyframes fadeInOpacity {
-	0% {
-		opacity: 0.3;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .toggleWrapper {
@@ -195,25 +197,24 @@ h2 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all .2s;
+  transition: all 0.2s;
   width: 65px;
   height: 65px;
   border-radius: 50%;
   background-color: #fe4551;
-  box-shadow: 0 5px 5px rgba(#fe4551, 0.3);
-  
+  box-shadow: 0 5px 5px #fe4551b2;
+
   &:active {
     width: 50px;
     height: 70px;
-    box-shadow: 0 10px 10px rgba(#fe4551, 0.5);
-  } 
+    box-shadow: 0 10px 10px #fe4551b2;
+  }
 
   &-done {
     @extend .toggleWrapper;
 
     background-color: #48e98a;
-    box-shadow: 0 5px 5px rgba(#48e98a, 0.3);
-
+    box-shadow: 1px 5px 5px #48e98bb2;
   }
 }
 
