@@ -4,11 +4,11 @@ const key = '&APPID=91322fba82fc1be8bdbdb3c2d5555e74';
 
 const weatherInfo = async (city) => {
   try {
-    const response = await fetch(`${url}${city}${key}`, { mode: 'cors'})
+    const response = await fetch(`${url}${city}${key}`, { mode: 'cors'});
     const result = await response.json();
-    return result
+    return result;
   } catch(err) {
-    err
+    err;
   }
 }
 

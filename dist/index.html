@@ -7,13 +7,23 @@
 </head>
 <body>
   <main>
+    <div><h1>Weather App</h1></div>
     <div class="container">
       <div class="input">
-      <form action="#">
-        <input type="text" placeholder="Enter city" name="city-input" id="city-input" class="city-input">
-        <input type="submit" value="Search" class="submit">
-      </form>      
-    </div>
+        <form action="#">
+          <input type="text" placeholder="Enter city" name="city-input" id="city-input" class="city-input">
+          <input type="submit" value="Search" class="submit" id='submit'>
+        </form>      
+      </div>
+      <div class="output">
+        <h2 id="city">Caraguatatuba,BR</h2>
+        <div class="temp" id="temp">
+          25 C
+        </div>        
+        <div class="info">
+          <span id="info">Feels Like 47C | Clouds | Humidity 90% | Winds </span>
+        </div>
+      </div>
     </div>
   </main>
   <div class="back-img">

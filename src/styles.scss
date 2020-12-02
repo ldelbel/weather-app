@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
 body {
@@ -14,8 +18,10 @@ main {
   background-color: #333;
   box-shadow: 0.5em 0 0.5em black;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  padding: 4em 0;
 }
 
 .back-img {
@@ -24,19 +30,27 @@ main {
   top: 0;
   width: 70%;
   height: 100vh;
-  background-color: rgb(240, 240, 111);
+  background-color: rgb(6, 163, 150);
   z-index: -1;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 80%;
   height: 80%;
-  background-color: rgb(75, 75, 75);
+}
 
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .city-input {
-  
+  height: 1.75em;
+  font-size: 2em;
 }
 
 .submit { 
@@ -44,12 +58,11 @@ main {
 	color: #FFF;
 	margin: 0 auto;
 	background: #1abc9c;
-	font-size: 18px;
+	font-size: 25px;
 	text-align: center;
 	font-style: normal;
 	border: 1px solid #16a085;
 	border-width: 1px 1px 3px;
-  margin-bottom: 10px;
   cursor: pointer;
 
   &:active {
@@ -59,4 +72,33 @@ main {
   &:focus {
     outline: none;
   }
+}
+
+.output {
+  margin-top: 2em;
+}
+
+.temp {
+  color:white;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+}
+
+h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 3em;
+}
+
+h2 {
+  color: white;
+  font-weight: 400;
+  font-size: 3em;
+  text-align: center;
 }
