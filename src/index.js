@@ -1,6 +1,6 @@
 import './styles.scss'
 import weatherInfo from './fetch'
-import { cityDom, tempDom, infoDom, submit } from './dom'
+import { cityDom, tempDom, infoDom, submit, flag, background } from './dom'
 
 const displayWeather = async (input) => {
   let city = await weatherInfo(input);
@@ -21,8 +21,14 @@ const displayWeather = async (input) => {
   cityDom.textContent = `${obj.name}, ${obj.country}`;
   tempDom.textContent = `${obj.temp}°C`;
   infoDom.textContent = `Feels like ${obj.feels}°C | ${obj.desc} | Humidity ${obj.humidity} | Winds (Speed ${obj.wind.speed}, Deg ${obj.wind.deg})`
-  console.log(obj.main)
   
+  let url = `https://www.countryflags.io/${obj.country}/shiny/64.png`;
+  flag.src = url;
+  flag.className = 'show';
+  let status = obj.main.toLowerCase()
+  background.className = `back-img-${status}`;
+
+
 } 
 
 submit.onclick = (e) => {

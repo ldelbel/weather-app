@@ -1,8 +1,8 @@
-let cityDom = document.getElementById('city');
-let tempDom = document.getElementById('temp');
-let infoDom = document.getElementById('info');
+const cityDom = document.getElementById('city');
+const tempDom = document.getElementById('temp');
+const infoDom = document.getElementById('info');
+const submit = document.getElementById('submit');
+const flag = document.getElementById('flag');
+const background = document.getElementById('back-img');
 
-let submit = document.getElementById('submit');
-
-
-export { cityDom, tempDom, infoDom, submit }
+export { cityDom, tempDom, infoDom, submit, flag, background }
