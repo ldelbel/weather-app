@@ -14,6 +14,7 @@ body {
 }
 
 main {
+  position: relative;
   width: 50%;
   height: 100vh;
   background-color: #333;
@@ -32,7 +33,7 @@ main {
   width: 70%;
   height: 100vh;
   background-image: url('./images/clear.jpg');
-  // background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   transition: background 0.5s;
   transition-timing-function: ease;
@@ -183,4 +184,43 @@ h2 {
 	100% {
 		opacity: 1;
 	}
+}
+
+.toggleWrapper {
+  position: absolute;
+  right: 15%;
+  top: 55%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .2s;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #fe4551;
+  box-shadow: 0 5px 5px rgba(#fe4551, 0.3);
+  
+  &:active {
+    width: 50px;
+    height: 70px;
+    box-shadow: 0 10px 10px rgba(#fe4551, 0.5);
+  } 
+
+
+  &-done {
+    @extend .toggleWrapper;
+
+    background-color: #48e98a;
+    box-shadow: 0 5px 5px rgba(#48e98a, 0.3);
+
+  }
+}
+
+.letter {
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 3em;
+  margin-left: -7px;
 }

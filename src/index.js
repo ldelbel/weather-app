@@ -40,5 +40,25 @@ submit.onclick = (e) => {
 }
 
 
+// switch button
+
+let checkbox = document.getElementById('toggle');
+let letter = document.getElementById('let');
+let btn = document.getElementById('btn');
+
+const toggle = () => {
+  if(checkbox.checked) {
+    btn.className = "toggleWrapper";
+    letter.textContent = "°F";
+   } else {
+    btn.className = "toggleWrapper-done"
+    letter.textContent = "°C"
+   }
+}
+
+btn.onclick = () => {
+  toggle();
+}
+
 
 
