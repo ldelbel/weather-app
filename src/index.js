@@ -1,6 +1,6 @@
 import './styles.scss'
 import weatherInfo from './fetch'
-import { cityDom, tempDom, infoDom, submit, flag, background } from './dom'
+import { cityDom, tempDom, infoDom, submit, flag, background, letter, checkbox, btn, toggle } from './dom'
 
 const displayWeather = async (input) => {
   let city = await weatherInfo(input);
@@ -25,40 +25,27 @@ const displayWeather = async (input) => {
   let url = `https://www.countryflags.io/${obj.country}/shiny/64.png`;
   flag.src = url;
   flag.className = 'show';
-  let status = obj.main.toLowerCase()
+  let status = obj.main.toLowerCase();
   background.className = `back-img-${status} fade-in`;
 
+  checkbox.checked = true;
+  btn.className = 'toggleWrapper-done';
+  letter.textContent = '°C';
 
 } 
 
 submit.onclick = (e) => {
   e.preventDefault;
   let input = document.getElementById('city-input').value;
-  console.log(input)
   document.getElementById('city-input').value = '';
   displayWeather(input)
-}
-
-
-// switch button
-
-let checkbox = document.getElementById('toggle');
-let letter = document.getElementById('let');
-let btn = document.getElementById('btn');
-
-const toggle = () => {
-  if(checkbox.checked) {
-    btn.className = "toggleWrapper";
-    letter.textContent = "°F";
-   } else {
-    btn.className = "toggleWrapper-done"
-    letter.textContent = "°C"
-   }
 }
 
 btn.onclick = () => {
   toggle();
 }
+
+
 
 
 
