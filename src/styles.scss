@@ -3,3 +3,60 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  position: relative;
+}
+
+main {
+  width: 50%;
+  height: 100vh;
+  background-color: #333;
+  box-shadow: 0.5em 0 0.5em black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: rgb(240, 240, 111);
+  z-index: -1;
+}
+
+.container {
+  width: 80%;
+  height: 80%;
+  background-color: rgb(75, 75, 75);
+
+}
+
+.city-input {
+  
+}
+
+.submit { 
+	padding: 9px 9px 8px 9px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #1abc9c;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	border: 1px solid #16a085;
+	border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  &:active {
+    background: #0c856c;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
