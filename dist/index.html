@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+</head>
+<body>
+  <main>
+    <div><h1>Weather App</h1></div>
+    <div class="container">
+      <div class="input">
+        <form action="#">
+          <input type="text" placeholder="Enter city" name="city-input" id="city-input" class="city-input">
+          <input type="submit" value="Search" class="submit" id='submit'>
+        </form>      
+      </div>
+      <div class="output">
+        <div class='flex'>
+          <h2 id="city"></h2><img src="" alt="flag" id="flag" class="hidden">
+        </div>  
+        <div class="temp" id="temp">
+
+        </div>
+        <input type="checkbox" id="toggle" class="hidden" />
+        <label for="toggle" class="hidden" id="btn">
+          <div id="let" class="letter">°F</div>
+        </label>   
+        <div class="info">
+          <span id="info"></span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="back-img" class="back-img">
+
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,57 +1,66 @@
-# Project Name
+# Weather App
 
-> One paragraph statement about the project.
+[![View Code](https://img.shields.io/badge/View%20-Code-green)]()
+[![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)]()
+[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)]()
+
+<a text-align="center" href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#ldl">Live Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#author">Author</a>
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+## About <a name = "about"></a>
 
-## Built With
+> App to search weather information by city, with temperatures in celsius or fahrenheit.
 
-- Major languages,
-- frameworks,
-- technologies used
+## 🔧 Built with<a name = "with"></a>
 
-## Live Demo
+- HTML5 & SASS
+- Javascript
+- Webpack
+- Open Weather API
+- Country Flags API
 
-[Live Demo Link](https://livedemo.com)
+## 🔴 Live Demo <a name = "ldl"></a>
+
+[Live Demo Link](https://raw.githack.com/ldelbel/weather-app/feature/app/dist/index.html)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+```
+$ cd <folder>
+$ git clone https://github.com/ldelbel/weather-app
+$ cd weather-app
+
+```
 
 ### Setup
 
-### Install
+Setup the environment for webpack.
 
-### Usage
+```
+$ npm run build
+$ npm start  // for live view
 
-### Run tests
+```
 
-### Deployment
+### Prerequisites
 
+- npm
 
+## ✒️  Author <a name = "author"></a>
 
-## Authors
+👤 **Lucas Delbel**
 
-👤 **Author1**
+- Github: [@ldelbel](https://github.com/ldelbel)
+- Twitter: [@delbel_lucas](https://twitter.com/delbel_lucas)
+- Linkedin: [lucasdelbel](https://www.linkedin.com/in/lucasdelbel/)
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -63,11 +72,10 @@ Feel free to check the [issues page](issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+## :clap: Acknowledgements
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse: [@microverse](https://www.microverse.org/)
+- [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/weather-app)
 
 ## 📝 License
 
