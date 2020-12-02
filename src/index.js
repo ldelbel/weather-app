@@ -1,8 +1,13 @@
-import "./styles.scss";
+import './styles.scss'
+import weatherInfo from './fetch'
 
 
-let a = document.createElement("div");
-let b = document.getElementById("one");
-a.textContent = "TEST 11";
+const displayWeather = async () => {
+  let city = await weatherInfo('London');
+  console.log(city.sys.country)
+}
 
-b.appendChild(a);
+displayWeather()
+
+
+
