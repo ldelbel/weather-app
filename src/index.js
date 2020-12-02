@@ -20,13 +20,13 @@ const displayWeather = async (input) => {
 
   cityDom.textContent = `${obj.name}, ${obj.country}`;
   tempDom.textContent = `${obj.temp}°C`;
-  infoDom.textContent = `Feels like ${obj.feels}°C | ${obj.desc} | Humidity ${obj.humidity} | Winds (Speed ${obj.wind.speed}, Deg ${obj.wind.deg})`
+  infoDom.textContent = `Feels like ${obj.feels}°C | ${obj.desc} | Humidity ${obj.humidity}% | Winds (Speed ${obj.wind.speed}, Deg ${obj.wind.deg})`
   
   let url = `https://www.countryflags.io/${obj.country}/shiny/64.png`;
   flag.src = url;
   flag.className = 'show';
   let status = obj.main.toLowerCase()
-  background.className = `back-img-${status}`;
+  background.className = `back-img-${status} fade-in`;
 
 
 } 

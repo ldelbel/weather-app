@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -21,7 +22,7 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  padding: 4em 0;
+  padding: 2em 0 4em;
 }
 
 .back-img {
@@ -31,27 +32,33 @@ main {
   width: 70%;
   height: 100vh;
   background-image: url('./images/clear.jpg');
-  background-size: cover;
+  // background-size: cover;
   background-repeat: no-repeat;
+  transition: background 0.5s;
+  transition-timing-function: ease;
   z-index: -1;
 
   &-clear {
     @extend .back-img;
+
     background-image: url('./images/clear.jpg');
   }
 
   &-rain {
     @extend .back-img;
+
     background-image: url('./images/rain.jpg');
   }
 
   &-clouds {
     @extend .back-img;
-    background-image: url('./images/rain.jpg');
+
+    background-image: url('./images/clouds.jpeg');
   }
 
   &-haze {
     @extend .back-img;
+
     background-image: url('./images/haze.jpg');
   }
 }
@@ -72,24 +79,39 @@ form {
 
 .city-input {
   padding-left: 0.5em;
-  height: 1.75em;
+  height: 1.78em;
   font-size: 1.6em;
+  border-top-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+  margin-top: -0.5px;
+  border-right: none;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
 }
 
 .submit { 
 	padding: 1px 9px 5px 9px;
 	color: #FFF;
 	margin: 0 auto;
-	background: #1abc9c;
+	background: #0da5d4;
 	font-size: 25px;
 	text-align: center;
 	font-style: normal;
-	border: 1px solid #16a085;
+	border: 1px solid #1674a0;
 	border-width: 1px 1px 3px;
   cursor: pointer;
+  border-top-right-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+
+  &:hover {
+    background: #1fc9e0;
+  }
 
   &:active {
-    background: #0c856c;
+    background: #085e4c;
   }
 
   &:focus {
@@ -103,9 +125,12 @@ form {
 
 .temp {
   color:white;
-  font-size: 2.5em;
+  font-size: 6em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
   text-align: center;
-  margin-top: 1.5em;
+  margin-top: 0.7em;
+  text-shadow: 2px 2px 0  #a03216;
 }
 
 .info {
@@ -117,8 +142,9 @@ form {
 
 h1 {
   color: white;
-  font-weight: 400;
-  font-size: 3em;
+  font-family: 'Lobster', cursive;
+  font-size: 5em;
+  text-shadow: 2px 2px 0  #0da5d4;
 }
 
 h2 {
@@ -140,4 +166,21 @@ h2 {
 .flex {
   display: flex;
   justify-content: center;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.8s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
 }
