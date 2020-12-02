@@ -22,6 +22,7 @@ const displayWeather = async (input) => {
   tempDom.textContent = `${obj.temp}°C`;
   infoDom.textContent = `Feels like ${obj.feels}°C | ${obj.desc} | Humidity ${obj.humidity} | Winds (Speed ${obj.wind.speed}, Deg ${obj.wind.deg})`
   console.log(obj.main)
+  
 } 
 
 submit.onclick = (e) => {
