@@ -25,7 +25,7 @@
 
 ## 🔴 Live Demo <a name = "ldl"></a>
 
-[Live Demo Link](https://raw.githack.com/ldelbel/weather-app/feature/app/dist/index.html)
+[Live Demo Link](https://clever-beaver-4d5c90.netlify.app/)
 
 
 ## Getting Started
