@@ -44,6 +44,7 @@ $ cd weather-app
 Setup the environment for webpack.
 
 ```
+$ npm install
 $ npm run build
 $ npm start  // for live view
 
