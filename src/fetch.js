@@ -2,7 +2,7 @@ import {
   cityDom, tempDom, infoDom, flag, background, letter, checkbox, btn,
 } from './dom';
 
-const url = 'http://api.openweathermap.org/data/2.5/weather?q=';
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=';
 const key = '&APPID=91322fba82fc1be8bdbdb3c2d5555e74';
 
 
@@ -39,6 +39,7 @@ const displayWeather = async (input) => {
   const url = `https://www.countryflags.io/${obj.country}/shiny/64.png`;
   flag.src = url;
   flag.className = 'show';
+
   const status = obj.main.toLowerCase();
   background.className = `back-img-${status} fade-in`;
 
