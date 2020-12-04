@@ -1,5 +1,6 @@
 # Weather App
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4a6922cc-b0c7-4316-b852-c548164704bf/deploy-status)](https://app.netlify.com/sites/clever-beaver-4d5c90/deploys)
 [![View Code](https://img.shields.io/badge/View%20-Code-green)]()
 [![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)]()
 [![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)]()
